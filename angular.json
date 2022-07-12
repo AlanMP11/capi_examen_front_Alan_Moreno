@@ -1,11 +1,18 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "2f395ebb-4628-4669-a0d4-6f8c928af80f"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "capi_examen_front_Alan_Moreno": {
+    "capi-examen-front-Alan-Moreno": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/capi-examen-front-alan-moreno",
+            "outputPath": "dist/capi-examen-front-Alan-Moreno",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "capi_examen_front_Alan_Moreno:build:production"
+              "browserTarget": "capi-examen-front-Alan-Moreno:build:production"
             },
             "development": {
-              "browserTarget": "capi_examen_front_Alan_Moreno:build:development"
+              "browserTarget": "capi-examen-front-Alan-Moreno:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "capi_examen_front_Alan_Moreno:build"
+            "browserTarget": "capi-examen-front-Alan-Moreno:build"
           }
         },
         "test": {
@@ -97,5 +104,6 @@
         }
       }
     }
-  }
+  },
+  "defaultProject": "capi-examen-front-Alan-Moreno"
 }

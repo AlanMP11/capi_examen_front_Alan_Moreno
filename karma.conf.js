@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/capi-examen-front-alan-moreno'),
+      dir: require('path').join(__dirname, './coverage/capi-examen-front-Alan-Moreno'),
       subdir: '.',
       reporters: [
         { type: 'html' },

@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'capi_examen_front_Alan_Moreno'`, () => {
+  it(`should have as title 'capi-examen-front-Alan-Moreno'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('capi_examen_front_Alan_Moreno');
+    expect(app.title).toEqual('capi-examen-front-Alan-Moreno');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('capi_examen_front_Alan_Moreno app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('capi-examen-front-Alan-Moreno app is running!');
   });
 });
